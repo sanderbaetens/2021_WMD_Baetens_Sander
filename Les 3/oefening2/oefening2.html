@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stijl.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <p><label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname"></p>
+            <p><label for="pswd">Password:</label>
+                <input type="password" id="pswd" name="pswd" placeholder="at least 8 characters"></p>
+        </fieldset>
+        <fieldset>
+            <legend >No account yet? Create one here:</legend>
+            <p><label for="fullname">Full name:*</label>
+                <input type="text" id="fullname" name="fullname" required></p>
+            <p><label for="gender">Gender: </label><input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label></p>
+            <p><label for="favcolor">Your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#2bff00"></p>
+            <p><label for="edu">Your education:* </label>
+                <select id="edu" name="edu" required size="1">
+                    <option value="" selected disabled>Select...</option>
+                    <option value="primary">Primary School</option>
+                    <option value="secondary">Secondary school</option>
+                    <option value="higher">Higher education</option>
+                    <option value="master">Master</option>
+                </select></p>
+            <p><label for="skills">Skills: </label><input type="checkbox" id="html" name="html" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+                <label for="Javascript">Javascript</label>
+                <input type="checkbox" id="css" name="css" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="php" name="php" value="php">
+                <label for="php">PHP</label></p>
+            <p><label for="upload">Upload a picture (.gif of jpeg): </label><input type="file" id="myfile" name="filename">
+            </p>
+            <p>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50">
+                </textarea>
+            </p>
+        </fieldset>
+        <p><input type="submit" class="submit" ></p>
+    </form>
+
+</body>
+
+</html>

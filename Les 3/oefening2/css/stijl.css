@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: hsl(205deg 40% 31%)
+}
+fieldset, legend, .submit {
+    border-color: hsl(205deg 10% 51%);
+    border: 1px;
+    border-style: solid;
+    border-color: hsl(205deg 10% 51%);
+    margin: 1em;
+}
+label {
+    min-width: 10em;
+    border: 1px;
+    border-style: solid;
+    background-color:hsl(205deg 10% 51%);;
+}
+input[type="text"] {
+    width: 15em;
+}
+.button {
+    border: 1px;
+}
