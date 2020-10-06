@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0.625em;
+    font-family: 'Noto Sans KR';
+}
+
+body {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        text-align: center;
+        margin: 3%;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    iframe {
+        width: 90%
+    }
+
+    div {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: lightskyblue;
+        margin-left: 3%;
+    }
+    iframe {
+        width: 50%;
+    }
+
+    .hobby {
+        width: 100%;
+        float: left;
+        margin: auto;
+    }
+    
+}
