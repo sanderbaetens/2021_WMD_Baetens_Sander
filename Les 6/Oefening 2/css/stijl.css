@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+body{
+        font-family: Verdana, Helvetica, sans-serif;
+    background-color: hsl(205deg 40% 31%);
+}
+label {
+    background-color: hsl(205deg 35% 35%);
+    color: lightblue;
+    padding: 0.25em;
+    min-width: 10em;
+    display: inline-block;
+}
+input, select, button {    
+    background-color: hsl(205deg 55% 55%);
+    color: lightblue;
+    margin: 0.25em;
+}
+input:active{
+    background-color: hsl(205deg 50% 50%);
+    transition-duration: 350ms;
+}
+input[type="text"], input[type="password"], select, input[type="submit"]
+{
+width: 15em;
+}
+fieldset, legend{
+    background-color: hsl(205deg 40% 41%);
+    border: 1px;
+    border-style: solid;
+    border-color:lightblue;
+    color: lightblue;
+    margin: 0.25em;
+}
+#comments{
+    background-color: hsl(205deg 55% 55%);
+}
+input[type="color"]{
+    width: 5em;
+    height: 2.5em;
+}
+.center{
+    text-align: center;
+}
+input[type="submit"] 
+{
+    width: 50%;
+    padding: 1em;
+}
+
+/*opgave 6.2*/
+input:focus{
+    background-color: hsl(205deg 75% 75%);
+    transition-duration: 350ms;
+}
+label[for="css"]:hover, label[for="html"]:hover,label[for="javascript"]:hover,label[for="php"]:hover, label[for="male"]:hover,label[for="female"]:hover {
+    background-color: hsl(205deg 50% 50%);
+    transition-duration: 350ms;
+}
+[data-required]::after { 
+    content:"*"; 
+}
+
+
+/*Einde opgave 6.2*/
+@media only screen and (max-width: 600px) {
+    
+}
+
+

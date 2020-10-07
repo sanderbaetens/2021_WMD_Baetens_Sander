@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0.625em;
+    font-family: 'Noto Sans KR';
+}
+
+body {
+    font-size: 1.3rem;
+}
+a[href$=".pdf"]:after
+{
+  content:"\f1c1  ";
+  font-family: fontawesome;
+  padding-left: 5px;
+}
+a
+{
+color: #3f7278;
+text-decoration: none;
+}
+a:link{
+    color: #4c8990;
+}
+a:visited{
+    color:#264448;
+}
+a:hover{
+    color: #3f7278;
+    text-decoration: underline;
+}
+a:active{
+    color: #0c1618;
+}
+.largelettre::first-letter {
+font-size: 2em;
+color: #192d30;
+}
+.largelettre::selection {
+    color: #cbf4f9;
+    background-color: #65b7c0;
+    transition-duration: 250ms;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #7fe5f0;
+        text-align: center;
+        margin: 3%;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    iframe {
+        width: 90%
+    }
+
+    div {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: #72ced8;
+        margin-left: 3%;
+    }
+    iframe {
+        width: 50%;
+    }
+
+    .hobby {
+        width: 100%;
+        float: left;
+        margin: auto;
+    }
+    
+}
