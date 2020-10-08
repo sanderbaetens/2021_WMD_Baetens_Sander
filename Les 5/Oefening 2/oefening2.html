@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stijl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
@@ -13,31 +14,31 @@
         <fieldset>
             <legend>Login</legend>
             <p>
-                <label for="uname">Username:</label>
+                <label for="uname" data-blocklabel>Username:</label>
                 <input type="text" id="uname" name="uname">
             </p>
             <p>
-                <label for="pswd">Password:</label>
+                <label for="pswd" data-blocklabel>Password:</label>
                 <input type="password" id="pswd" name="pswd" placeholder="at least 8 characters">
             </p>
         </fieldset>
         <fieldset>
             <legend>No account yet? Create one here:</legend>
             <p>
-                <label for="fullname">Full name:*</label>
+                <label for="fullname" data-blocklabel>Full name:*</label>
                 <input type="text" id="fullname" name="fullname" required>
             </p>
             <p>
-                <label for="gender">Gender:</label>
+                <label data-blocklabel>Gender:</label>
                 <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>
                 <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label>
             </p>
             <p>
-                <label for="favcolor">Your favorite color:</label>
+                <label for="favcolor" data-blocklabel>Your favorite color:</label>
                 <input type="color" id="favcolor" name="favcolor" value="#2bff00">
             </p>
             <p>
-                <label for="edu">Your education:* </label>
+                <label for="edu" data-blocklabel>Your education:* </label>
                 <select id="edu" name="edu" required size="1">
                     <option value="" selected disabled>Select...</option>
                     <option value="primary">Primary School</option>
@@ -47,19 +48,19 @@
                 </select>
             </p>
             <p>
-                <label for="skills">Skills:</label>
+                <label data-blocklabel>Skills:</label>
                 <label for="html"><input type="checkbox" id="html" name="html" value="html">HTML</label>
                 <label for="javascript"><input type="checkbox" id="javascript" name="javascript" value="javascript">Javascript</label>
                 <label for="css"><input type="checkbox" id="css" name="css" value="css">CSS</label>
                 <label for="php"><input type="checkbox" id="php" name="php" value="php">PHP</label>
             </p>
             <p>
-                <label for="upload">Upload a picture (.gif of jpeg): </label>
+                <label data-blocklabel>Upload a picture (.gif of jpeg): </label></br>
                 <input type="file" id="myfile" name="filename">
             </p>
             <p>
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="4" cols="50">
+                <label for="comments" data-blocklabel>Comments:</label></br>
+                <textarea id="comments" name="comments">
                 </textarea>
             </p>
         </fieldset>

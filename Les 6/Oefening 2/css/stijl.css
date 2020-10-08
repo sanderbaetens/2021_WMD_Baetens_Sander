@@ -54,7 +54,7 @@ input:focus{
     background-color: hsl(205deg 75% 75%);
     transition-duration: 350ms;
 }
-label[for="css"]:hover, label[for="html"]:hover,label[for="javascript"]:hover,label[for="php"]:hover, label[for="male"]:hover,label[for="female"]:hover {
+[data-hoverchange]:hover {
     background-color: hsl(205deg 50% 50%);
     transition-duration: 350ms;
 }

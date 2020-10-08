@@ -3,24 +3,44 @@
 }
 body{
     font-family: Verdana, Helvetica, sans-serif;
-    background-color: hsl(205deg 40% 31%)
-}
-fieldset, legend, .submit {
-    border-color: hsl(205deg 10% 51%);
-    border: 1px;
-    border-style: solid;
-    border-color: hsl(205deg 10% 51%);
-    margin: 1em;
+    background-color: hsl(205deg 40% 31%);
 }
 label {
+    background-color: hsl(205deg 35% 35%);
+    color: lightblue;
+    padding: 0.25em;
     min-width: 10em;
+    display: inline-block;
+}
+input, select, button {    
+    background-color: hsl(205deg 55% 55%);
+    color: lightblue;
+    margin: 0.25em;
+}
+input[type="text"], input[type="password"], select, input[type="submit"]
+{
+width: 15em;
+}
+fieldset, legend{
+    background-color: hsl(205deg 40% 41%);
     border: 1px;
     border-style: solid;
-    background-color:hsl(205deg 10% 51%);;
+    border-color:lightblue;
+    color: lightblue;
+    margin: 0.25em;
 }
-input[type="text"] {
-    width: 15em;
+#comments{
+    background-color: hsl(205deg 55% 55%);
 }
-.button {
-    border: 1px;
+input[type="color"]{
+    width: 5em;
+    height: 2.5em;
+}
+.center{
+    text-align: center;
+}
+input[type="submit"] 
+{
+    width: 50%;
+    padding: 1em;
 }
