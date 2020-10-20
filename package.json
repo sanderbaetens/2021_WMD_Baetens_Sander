@@ -1,0 +1,25 @@
+{
+  "name": "2021_wmd_baetens_sander",
+  "version": "1.0.0",
+  "description": "domain name: www.sanderbaetens.be",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanderbaetens/2021_WMD_Baetens_Sander.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanderbaetens/2021_WMD_Baetens_Sander/issues"
+  },
+  "homepage": "https://github.com/sanderbaetens/2021_WMD_Baetens_Sander#readme",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {}
+}
