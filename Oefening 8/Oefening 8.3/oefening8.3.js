@@ -7,22 +7,44 @@
     return lettergrepen[Math.floor(Math.random() * lettergrepen.length)];
   }
 
-  function maakKlas(aantal) {
-    const klas=[];
+  function maakKlas(aantal, moment) {
+    const klas = [];
     for (let i = 1; i <= aantal; i++) {
       const student = {
-        nummer: 'NR-'+ i,
+        nummer: 'NR-' + i,
         voornaam: lettergreep() + lettergreep(),
         achternaam: lettergreep() + lettergreep() + lettergreep(),
+        klas: moment,
       };
       klas.push(student);
     }
     return klas;
   }
-  const klasDag = maakKlas(20);
-  const klasAvond = maakKlas(10);
+  const klasDag = maakKlas(20, 'dag');
+  const klasAvond = maakKlas(10, 'avond');
 
   console.log(klasAvond);
   console.log(klasDag);
-})();
 
+  function toonStudent(nummer, klas) {
+    console.log(klas[nummer]);
+  };
+
+
+  function kiesStudent(klas) {
+    return Math.floor(Math.random() * klas.length);
+  }
+
+
+  function toonWillekeurigeStudent(klas) {
+    toonStudent(kiesStudent(klas), klas);
+  }
+
+  for (i = 0; i < 10; i++) {
+    toonWillekeurigeStudent(klasDag);
+  }
+
+  for (i = 0; i < 10; i++) {
+    toonWillekeurigeStudent(klasAvond);
+  }
+})();
