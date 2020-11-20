@@ -37,7 +37,7 @@ if (localStorage.playlist) {
     localStorageOutput.innerHTML = privateplaylistoutput;
   }
 } else {
-  document.getElementById('nolocalstorage').innerHTML = 'No playlist has been created.';
+  // document.getElementById('nolocalstorage').innerHTML = 'No playlist has been created.';
 }
 
 table.addEventListener('click', (e) => {
