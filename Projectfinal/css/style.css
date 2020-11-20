@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.625em;
+}
+
+thead {
+    background: #1E1E23;
+    color: #F5F6FA;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    text-align: left;
+}
+
+th {
+    padding: 0.35em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    background-color: #1E1E23;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+table.playlisttable {
+    margin-top: calc(65px + 2em);
+}
+
+.onzichtbaar {
+    display: none;
+}
+
+.addToPlaylist, .removeFromPlaylist  {
+    text-align: center;
+}
+
+legend {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.smallerwidth {
+    width: 15%;
+}
+
+body {
+    background-attachment: fixed;
+    background-color: #f9f9f9;
+    background-image: url("/Projectfinal/img/unsplashjoshrose2.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+    text-align: center;
+}
+
+tr:nth-child(2n+2) {
+    background-color: rgb(255, 255, 255, 0.35);
+}
+
+#page-container {
+    min-height: 80vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    bottom: 0;
+    height: 2.5em;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 1em;
+    margin-top: 95px;
+}
+
+ul {
+    text-decoration: none;
+}
+
+nav {
+    font-size: 1.25em;
+
+}
+
+.addbutton, .removebutton {
+    background-color: lightgray;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 0.2em;
+    display: inline-block;
+    height: auto;
+    width: 3em;
+}
+
+div.subscribe input[type=text],
+div.subscribe input[type=email] {
+    width: 15em;
+}
+
+div.subscribe input[type=text]:focus,
+div.subscribe input[type=email]:focus {
+    border: 3px solid #1E1E23;
+}
+
+div.buttoncss {
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 75vw;
+}
+
+div.buttoncss input[type=text] {
+    border: 1px solid grey;
+    float: left;
+    font-size: 17px;
+    padding: 10px;
+    width: 75%;
+}
+
+div.buttoncss button {
+    background: #1E1E23;
+    border: 1px solid grey;
+    border-left: none;
+    color: #f9f9f9;
+    cursor: pointer;
+    float: left;
+    font-size: 17px;
+    padding: 10px;
+    width: 20%;
+}
+
+div.buttoncss button:hover {
+    background: #36383F;
+}
+
+div.buttoncss::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+legend {
+    font-size: 2.3em;
+    margin-top: calc(65px + 2em);
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form input,
+.form #submit {
+    background: lightgrey;
+    border: solid 1px #1E1E23;
+    border-bottom: none;
+    font-size: 0.875em;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    width: 75vw;
+}
+
+.form input:hover,
+.form #submit:hover {
+    background: #1E1E23;
+    color: lightgrey;
+}
+
+.form #submit {
+    border: solid 1px #1E1E23;
+    color: #1E1E23;
+    cursor: pointer;
+    font-size: 0.875em;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 420px) {
+    .desktoponly {
+        display: none;
+    }
+
+    a:hover {
+        opacity: 0.5;
+    }
+
+    .container {
+        align-items: center;
+        Display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    #menuToggle {
+        display: flex;
+        flex-direction: column;
+        left: 25px;
+        position: relative;
+        top: 25px;
+        user-select: none;
+        -webkit-user-select: none;
+        z-index: 1;
+    }
+
+    #menuToggle input {
+        cursor: pointer;
+        display: flex;
+        height: 32px;
+        opacity: 0;
+        position: absolute;
+        width: 40px;
+        z-index: 2;
+    }
+
+    #menuToggle span {
+        background: #ffffff;
+        border-radius: 3px;
+        display: flex;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+        width: 29px;
+        z-index: 1;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked~span {
+        background: #36383F;
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+    }
+
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        background-color: #F5F6FA;
+        box-shadow: 0 0 10px #85888C;
+        height: 400px;
+        margin: -50px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        position: absolute;
+        transform: translate(-100%, 0);
+        transform-origin: 0% 0%;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        -webkit-font-smoothing: antialiased;
+        width: 180px;
+    }
+
+    #menu li {
+        padding: 10px 0;
+        transition-delay: 2s;
+    }
+
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
+
+    .album {
+        display: none;
+    }
+
+    table {
+        margin-bottom: 2.5em;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        margin-top: 2.5em;
+        width: calc(100vw - 0.4rem);
+    }
+    th,
+    td {
+        vertical-align: middle;
+    }
+
+    .aboutme p {
+        padding: 1em 5em 1.5em 5em;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95vw;
+    }
+
+    td {
+        padding: 0.35em;
+    }
+
+    .mobileonly {
+        display: none;
+    }
+
+    #menu {
+        background-color: #1E1E23;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+
+    #menu li a {
+        color: #f2f2f2;
+        display: block;
+        float: left;
+        padding: 0.30em 0.30em;
+        text-decoration: none;
+        width: 8em;
+    }
+
+    a {
+        color: #1E1E23;
+
+        text-decoration: none;
+        transition: 200ms;
+    }
+
+    .aboutme p {
+        padding: 0 3em 3em 1.5em;
+    }
+
+    .aboutme {
+        float: left;
+        padding: 5px;
+        width: 50%;
+    }
+
+    .aboutmegroup::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}

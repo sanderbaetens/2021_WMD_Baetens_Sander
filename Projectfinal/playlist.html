@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Playlist</title>
+</head>
+<body>
+    
+    <nav class="mobileonly">
+        <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="form.html">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>
+<nav class="desktoponly">
+    <ul id="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="form.html">Subscribe</a></li>
+    </ul>
+</nav>
+<div id="page-container">
+    <div id="contentwrap">
+    <table class="playlisttable">
+        <section>
+        <thead>
+        <tr>
+            <th>Song</th>
+            <th>Artist</th>
+            <th class="album">Album</th>
+            <th class="smallerwidth">Remove</th>
+        </tr>
+    </thead>
+    <tbody id="newplaylist">
+            </tbody>        
+    </table>
+</section>
+<div><p id="nolocalstorage"></p></div>
+</div>
+<footer id="footer"><i class="fa fa-copyright"></i> Sander Baetens</footer>
+</div>
+</body>
+<script src="javascript.js"></script></body>
+</html>
